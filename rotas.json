@@ -1,0 +1,80 @@
+{
+    "hamburguer":[
+        {
+            "id": 1,
+            "nome": "x-bacon",
+            "disponivel": true,
+            "preco": 20
+        },
+        {
+            "id": 2,
+            "nome": "hamburguer",
+            "disponivel": true,
+            "preco": 10
+        },
+        {
+            "id": 3,
+            "nome": "vegetariano",
+            "disponivel": false,
+            "preco": 0
+        },
+        {
+            "id": 10,
+            "nome": "picanha",
+            "disponivel": false,
+            "preco": 0
+        }
+    ],
+    "refrigerante":[
+        {
+            "id": 4,
+            "nome": "coca",
+            "disponivel": true,
+            "preco": 10
+        },
+        {
+            "id": 5,
+            "nome": "guarana",
+            "disponivel": true,
+            "preco": 9
+        },
+        {
+            "id": 6,
+            "nome": "pepsi",
+            "disponivel": false,
+            "preco": 0
+        },
+        {
+            "id": 11,
+            "nome": "sprite",
+            "disponivel": true,
+            "preco": 8
+        }
+    ],
+    "sobremesa":[
+        {
+            "id": 7,
+            "nome": "sorvete",
+            "disponivel": true,
+            "preco": 9
+        },
+        {
+            "id": 8,
+            "nome": "acai",
+            "disponivel": false,
+            "preco": 0
+        },
+        {
+            "id": 9,
+            "nome": "salada de frutas",
+            "disponivel": true,
+            "preco": 12
+        },
+        {
+            "id": 12,
+            "nome": "algodao doce",
+            "disponivel": true,
+            "preco": 7
+        }
+    ]
+}
