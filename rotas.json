@@ -1,80 +1,97 @@
 {
-    "hamburguer":[
+    "cardapio": [
+        {
+            "hamburguer": [
+                {
+                    "id": 1,
+                    "nome": "x-bacon",
+                    "ingredientes": "Pão, hamburguer, molho, salada, queijo, presunto, bacon",
+                    "preco": 20
+                },
+                {
+                    "id": 2,
+                    "nome": "x-hamburguer",
+                    "ingredientes": "Pão, hamburguer, molho, salada",
+                    "preco": 12
+                },
+                {
+                    "id": 3,
+                    "nome": "vegetariano",
+                    "ingredientes": "Planta",
+                    "preco": 10
+                }        
+            ]
+        }
         {
             "id": 1,
             "nome": "x-bacon",
-            "disponivel": true,
+            "ingredientes": "Pão, hamburguer, molho, salada, queijo, presunto, bacon",
             "preco": 20
         },
         {
             "id": 2,
-            "nome": "hamburguer",
-            "disponivel": true,
-            "preco": 10
+            "nome": "x-hamburguer",
+            "ingredientes": "Pão, hamburguer, molho, salada",
+            "preco": 12
         },
         {
             "id": 3,
             "nome": "vegetariano",
+            "ingredientes": "Planta",
+            "preco": 10
+        },
+        {
+            "id": 3,
+            "nome": "x-picanha",
             "disponivel": false,
             "preco": 0
         },
         {
-            "id": 10,
-            "nome": "picanha",
-            "disponivel": false,
-            "preco": 0
-        }
-    ],
-    "refrigerante":[
-        {
             "id": 4,
             "nome": "coca",
-            "disponivel": true,
             "preco": 10
         },
         {
             "id": 5,
             "nome": "guarana",
-            "disponivel": true,
             "preco": 9
         },
         {
             "id": 6,
             "nome": "pepsi",
-            "disponivel": false,
-            "preco": 0
-        },
-        {
-            "id": 11,
-            "nome": "sprite",
-            "disponivel": true,
             "preco": 8
-        }
-    ],
-    "sobremesa":[
+        },
         {
             "id": 7,
             "nome": "sorvete",
-            "disponivel": true,
             "preco": 9
         },
         {
             "id": 8,
             "nome": "acai",
-            "disponivel": false,
-            "preco": 0
+            "preco": 10
         },
         {
             "id": 9,
             "nome": "salada de frutas",
-            "disponivel": true,
-            "preco": 12
-        },
+            "preco": 7
+        }
+    ],
+    "pedido": [
         {
-            "id": 12,
-            "nome": "algodao doce",
-            "disponivel": true,
-            "preco": 9
+            "id": 10,
+            "hamburguer": "x-bacon",
+            "bebida": "coda",
+            "sobremesa": "sorvete"
+        }
+    ],
+    "comanda": [
+        {
+            "id": 10,
+            "hamburguer": "x-bacon",
+            "bebida": "coda",
+            "sobremesa": "sorvete",
+            "preco total": ""
         }
     ]
 }
