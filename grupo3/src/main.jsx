@@ -6,6 +6,10 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Cardapio from './routes/cardapio';
+import Pedidos from './routes/Pedidos';
+import Carrinho from './routes/Carrinho';
+import Nos from './routes/Nos';
 
 const router = createBrowserRouter([
   {
@@ -23,19 +27,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/cardapio",
-        element: <h2>devair</h2>
+        element: <Cardapio/>
       },
       {
         path: "/pedido",
-        element: <h1>PEDIDOS</h1>
+        element: <Pedidos/>
       },
       {
         path: "/carrinho",
-        element: <h1>CARRINHO</h1>
+        element: <Carrinho/>
       },
       {
         path: "/nos",
-        element: <h1>NÓS</h1>
+        element: <Nos/>
       }
     ]
   },
