@@ -1,6 +1,11 @@
-function Carrinho(){
-  return(
-    <h2>Página Carrinho</h2>
-  )
+import Tabela from "../components/Tabela";
+
+function Carrinho() {
+  return (
+    <div>
+      <Tabela/>
+    </div>
+  );
 }
+
 export default Carrinho;

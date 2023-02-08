@@ -1,6 +1,6 @@
 function Cardapio(){
   return(
-    <div><h1>CARDÁPIOs</h1></div>
+    <div></div>
   )
 }
 export default Cardapio

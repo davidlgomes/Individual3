@@ -1,0 +1,15 @@
+.tabela{
+  width: 900px;
+  text-align: center;
+}
+
+.centro{
+  display: flex;
+  flex-direction: column;
+}
+
+.botao{
+  border: none;
+  color: red;
+  background-color: transparent;
+}
