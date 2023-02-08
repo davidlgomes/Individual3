@@ -1,8 +1,13 @@
 .navBar{
   display: flex;
   justify-content: space-between;
+  background-color: #b144b4;
 }
 
 .navBarColor{
   background-color: #b144b4;
+}
+
+.textColor{
+  color: #fff;
 }
