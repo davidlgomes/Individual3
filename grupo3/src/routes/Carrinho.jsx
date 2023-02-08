@@ -1,4 +1,4 @@
-import Tabela from "../components/Tabela";
+import Tabela from "../components/Tabela/Tabela";
 
 function Carrinho() {
   return (

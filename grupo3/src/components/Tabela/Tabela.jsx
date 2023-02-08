@@ -60,8 +60,8 @@ function Tabela() {
             </tr>
             <tr>
               {/* <td>3</td> */}
-              <td colSpan={2}>Valor total</td>
-              <td>R$ 150,00</td>
+              <td colSpan={2}><strong>Valor total</strong></td>
+              <td><strong>39,00</strong></td>
               <td>
                 <Button variant="primary" onClick={handleShow}>
                   Finalizar pedido
