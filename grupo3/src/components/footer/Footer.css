@@ -17,3 +17,7 @@
 .textColor{
   color: #fff;
 }
+
+li {
+  list-style-type: none;
+}

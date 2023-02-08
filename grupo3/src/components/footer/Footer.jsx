@@ -2,24 +2,25 @@ import './Footer.css'
 
 function Footer() {
   return (
-    <div>
       <footer className="colorBack d-flex flex-wrap py-3 my-4 border-top">
-        <div className="col-md-4 d-flex">
-          <span className="mb-3 mb-md-0">&copy; Squad1</span>
+        <div>
+          <strong>Conheça nossas lojas:</strong><br/>
+          Irajá | Madureira | Barra <br/>
+          Botafogo | São Conrrado
         </div>
 
         <div>
-          Devair Martins
+          <strong>Fale Conosco:</strong><br/>
+          <i class="fa fa-whatsapp"> (21) 97171-7171 / 97272-7272</i><br />
+          <i class="fa fa-envelope"> contato@spaceburguer.com.br</i>
         </div>
 
-        <ul className="nav col-md-4 justify-content-end list-unstyled d-flex left">
-          {/* <li className="ms-3"><a href="https://www.google.com.br/"><i class="fa fa-instagram"></i></a></li> */}
-          <li className="ms-3"><a className="text-muted" href="#"><i class="fa fa-instagram textColor"></i></a></li>
-          <li className="ms-3"><a className="text-muted" href="#"><i class="fa fa-instagram textColor"></i></a></li>
-          <li className="ms-3"><a className="text-muted" href="#"><i class="fa fa-instagram textColor"></i></a></li>
-        </ul>
+        <div>
+          <strong>Fale Conosco:</strong><br/>
+          <i class="fa fa-twitter"> Space.Burger</i><br />
+          <i class="fa fa-instagram textColor"> Space.Burguer</i>
+        </div>
       </footer>
-    </div>
   )
 }
 export default Footer;
