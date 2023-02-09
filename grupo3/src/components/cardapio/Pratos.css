@@ -10,6 +10,7 @@
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
+    width: 700px;
 }
 
 .textoCentro{
@@ -18,4 +19,9 @@
 
 .rosa{
     border: 1.5px #b144b4 solid;
+}
+
+.fotos{
+    width: 231px;
+    height: 198px;
 }

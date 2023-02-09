@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Footer from './components/footer/Footer'
 // import './App.css'
 
+
 function App() {
   return (
     <div className="App">
