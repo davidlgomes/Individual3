@@ -25,17 +25,17 @@
         {
             "bebidas": [
                 {
-                    "id": 4,
+                    "id": 1,
                     "nome": "coca",
                     "preco": 11
                 },
                 {
-                    "id": 5,
+                    "id": 2,
                     "nome": "guarana",
                     "preco": 10
                 },
                 {
-                    "id": 6,
+                    "id": 3,
                     "nome": "pepsi",
                     "preco": 10
                 }        
@@ -44,19 +44,19 @@
         {
             "sobremesas": [
                 {
-                    "id": 7,
+                    "id": 1,
                     "nome": "sorvete",
                     "sabor": "chocolate",
                     "preco": 9
                 },
                 {
-                    "id": 8,
+                    "id": 2,
                     "nome": "açai",
                     "sabor": "natural",
                     "preco": 10
                 },
                 {
-                    "id": 9,
+                    "id": 3,
                     "nome": "salada de frutas",
                     "sabor": "frutas vermelhas",
                     "preco": 7
@@ -66,7 +66,7 @@
     ],
     "pedido": [
         {
-            "id": 10,
+            "id": 1,
             "hamburguer": "x-bacon",
             "bebida": "coda",
             "sobremesa": "sorvete"
@@ -74,7 +74,7 @@
     ],
     "comanda": [
         {
-            "id": 10,
+            "id": 1,
             "hamburguer": "x-bacon",
             "bebida": "coda",
             "sobremesa": "sorvete",

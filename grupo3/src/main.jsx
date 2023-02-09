@@ -10,6 +10,7 @@ import Cardapio from './routes/Cardapio';
 import Pedidos from './routes/Pedidos';
 import Carrinho from './routes/Carrinho';
 import Nos from './routes/Nos';
+import Home from './routes/Home';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
     children:[
       {
         path: "/",
-        element: <h1>HOME</h1>
+        element: <Home/>
       },
       {
         path: "/cardapio",
