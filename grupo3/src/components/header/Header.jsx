@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Badge from 'react-bootstrap/Badge';
+import {Link} from 'react-router-dom';
 import './Header.css'
 
 function Header() {
@@ -10,11 +11,11 @@ function Header() {
         <Container className='navBarColor'>
           <Navbar.Brand href="/"  className='navBarColor'>Navbar</Navbar.Brand>
           <Nav>
-            <Nav.Link href="/" className='textColor'>Home</Nav.Link>
-            <Nav.Link href="/cardapio" className='textColor'>Cardápio</Nav.Link>
-            <Nav.Link href="/pedido" className='textColor'>Pedidos</Nav.Link>
-            <Nav.Link href="/nos" className='textColor'>Contato</Nav.Link>
-            <Nav.Link href="/carrinho" className='textColor'><i class="fa fa-shopping-cart"></i><Badge bg="secondary">0</Badge></Nav.Link>
+            <Nav><Link to="/" className='textColor'>Home</Link></Nav>
+            <Nav><Link to="/cardapio" className='textColor'>Cardápio</Link></Nav>
+            <Nav><Link to="/pedido" className='textColor'>Pedidos</Link></Nav>
+            <Nav><Link to="/nos" className='textColor'>Contato</Link></Nav>
+            <Nav><Link to="/carrinho" className='textColor'><i className="fa fa-shopping-cart"></i><Badge bg="secondary">0</Badge></Link></Nav>
           </Nav>
         </Container>
       </Navbar>
