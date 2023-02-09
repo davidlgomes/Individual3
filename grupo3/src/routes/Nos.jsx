@@ -1,6 +1,10 @@
+import Info from "../components/nos/Info";
+
 function Nos(){
   return(
-    <h4>É nós!</h4>
+    <div>
+      <Info/>
+    </div>
   )
 }
 export default Nos;

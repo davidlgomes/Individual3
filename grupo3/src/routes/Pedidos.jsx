@@ -1,4 +1,4 @@
-import Formulario from '../components/formulario/Formulario';
+import Formulario from '../components/pedidos/Formulario';
 
 function Pedidos(){
   return(
