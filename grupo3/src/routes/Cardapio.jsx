@@ -1,6 +1,10 @@
+import Pratos from "../components/cardapio/Pratos"
+
 function Cardapio(){
   return(
-    <div></div>
+    <div>
+      <Pratos/>
+    </div>
   )
 }
 export default Cardapio

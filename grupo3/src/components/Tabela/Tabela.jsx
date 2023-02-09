@@ -15,6 +15,7 @@ function Tabela() {
       <div>
         <h2>Carrinho</h2>
       </div>
+      <br />
       <div className='tabela'>
         <Table striped>
           <thead>
@@ -28,7 +29,7 @@ function Tabela() {
           <tbody>
             <tr>
               <td>X-Burguer</td>
-              <td>1</td>
+              <td><input type="number" min='0' max='10'/></td>
               <td>10,00</td>
               <td>
                 <button className='botao'><strong>X</strong></button>
@@ -36,7 +37,7 @@ function Tabela() {
             </tr>
             <tr>
               <td>Coca</td>
-              <td>1</td>
+              <td><input type="number" min='0' max='10'/></td>
               <td>6,00</td>
               <td>
                 <button className='botao'><strong>X</strong></button>
@@ -44,7 +45,7 @@ function Tabela() {
             </tr>
             <tr>
               <td>Batata</td>
-              <td>2</td>
+              <td><input type="number" min='0' max='10'/></td>
               <td>8,00</td>
               <td>
                 <button className='botao'><strong>X</strong></button>
@@ -52,7 +53,7 @@ function Tabela() {
             </tr>
             <tr>
               <td>Sorvete</td>
-              <td>2</td>
+              <td><input type="number" min='0' max='10'/></td>
               <td>15,00</td>
               <td>
                 <button className='botao'><strong>X</strong></button>
