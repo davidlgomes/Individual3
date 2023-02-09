@@ -22,10 +22,6 @@ const router = createBrowserRouter([
         element: <h1>HOME</h1>
       },
       {
-        path: "/",
-        element: <h1>HOME</h1>
-      },
-      {
         path: "/cardapio",
         element: <Cardapio/>
       },
