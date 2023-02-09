@@ -4,6 +4,7 @@ import Table from 'react-bootstrap/Table';
 import './Formulario.css'
 import Modal from 'react-bootstrap/Modal';
 import React, { useState } from 'react';
+import Accordion from 'react-bootstrap/Accordion';
 
 
 function Formulario() {
@@ -13,110 +14,92 @@ function Formulario() {
   // const handleShow = () => setShow(true);
 
   return (
-    <div>
-      Escolha o seu combo:
-      <div>
-        <Table>
-          <tbody>
-            <tr>
-              <td>
-                <Form>
-                  <Form.Group>
-                    <Form.Select className='tabelaF'>
-                      <option>X-Burguer</option>
-                      <option>X-Bacon</option>
-                      <option>Vegetariano</option>
-                      <option>Sem hambúrguer</option>
-                    </Form.Select><br />
-                  </Form.Group>
-                  <Form.Group>
-                    <Form.Select className='tabelaF'>
-                      <option>aaa</option>
-                      <option>X-Bacon</option>
-                      <option>Vegetariano</option>
-                      <option>Sem hambúrguer</option>
-                    </Form.Select><br />
-                  </Form.Group>
-                </Form>
-              </td>
-              <td>
-                <Form>
-                  <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Select  className='tabelaF'>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>Quantidade na observação</option>
-                    </Form.Select><br />
-                  </Form.Group>
-                </Form>
-              </td>
-            </tr>
-          </tbody>
-        </Table>
+    <div className='colunas'>
+      <div className='tabelaF'>
+        <h4>Monte o seu combo</h4>
         <br />
-        Escolha seu Hambúrguer
-        <Table>
-          <Form>
-            <Form.Group>
-              <Form.Select className='tabela'>
-                <option>X-Burguer</option>
-                <option>X-Bacon</option>
-                <option>Vegetariano</option>
-                <option>Sem hambúrguer</option>
-              </Form.Select><br />
-            </Form.Group>
-          </Form>
-          <td>
-            <Form>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Select className='tabela'>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>Quantidade na observação</option>
-                </Form.Select><br />
-              </Form.Group>
-            </Form>
-          </td>
-        </Table>
+        <strong>Escolha o seu Hambúrguer:</strong>
+        <Form>
+          <Form.Group>
+            <Form.Select className='tabelaF'>
+              <option>Sem hambúrguer</option>
+              <option>X-Bacon</option>
+              <option>Vegetariano</option>
+              <option>X-Burguer</option>
+            </Form.Select><br />
+          </Form.Group>
+        </Form>
+        <strong>E para beber?</strong>
+        <Form>
+          <Form.Group>
+            <Form.Select className='tabelaF'>
+              <option>Sem bebida</option>
+              <option>Coca</option>
+              <option>Guaraná</option>
+              <option>Sprite</option>
+            </Form.Select><br />
+          </Form.Group>
+        </Form>
+        <strong>Algum acompanhamento?</strong>
+        <Form>
+          <Form.Group>
+            <Form.Select className='tabelaF'>
+              <option>Sem acompanhamento</option>
+              <option>Batata frita</option>
+              <option>Tekitos</option>
+              <option>Cebola empanada</option>
+            </Form.Select><br />
+          </Form.Group>
+        </Form>
+        <strong>Não esquece a sobremesa!</strong>
+        <Form>
+          <Form.Group>
+            <Form.Select className='tabelaF'>
+              <option>Sem sobremesa</option>
+              <option>Sorvete</option>
+              <option>Açaí</option>
+              <option>Salada de frutas</option>
+            </Form.Select><br />
+          </Form.Group>
+        </Form>
       </div>
-      {/* <Form>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        Escolha seu Hambúrguer
-        <Form.Select className='tabela'>
-          <option>X-Burguer</option>
-          <option>X-Bacon</option>
-          <option>Vegetariano</option>
-          <option>Sem hambúrguer</option>
-        </Form.Select><br/>
-        Escolha sua bebida
-        <Form.Select className='tabela'>
-          <option>Coca</option>
-          <option>Guaraná</option>
-          <option>Pepsi</option>
-          <option>Sem bebidas</option>
-        </Form.Select><br/>
-        Escolha seu acompanhamento
-        <Form.Select className='tabela'>
-          <option>Batata frita</option>
-          <option>Tekitos</option>
-          <option>Cebola empanada</option>
-          <option>Sem acompanhamento</option>
-        </Form.Select><br/>
-        Vai de sobremesa?
-        <Form.Select className='tabela'>
-          <option>Sorvete</option>
-          <option>Açaí</option>
-          <option>Salada de frutas</option>
-          <option>Sem sobremesa</option>
-        </Form.Select>
-      </Form.Group>
+      <div className='tabelaF'>
+        <h4>Ingredientes</h4>
+        <br />
+        <Accordion>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>X-Bacon</Accordion.Header>
+            <Accordion.Body>
+              Pão, carne, queijo, presunto, bacon, ovo e salada.
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>X-Burguer</Accordion.Header>
+            <Accordion.Body>
+              Pão, carne, queijo e picles.
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="2">
+            <Accordion.Header>Vegetariano</Accordion.Header>
+            <Accordion.Body>
+              Pão e planta.
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="3">
+            <Accordion.Header>Sorvete</Accordion.Header>
+            <Accordion.Body>
+              Napolitano.
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="4">
+            <Accordion.Header>Salada de frutas</Accordion.Header>
+            <Accordion.Body>
+              Maçã, banana, mamão e laranja.
+            </Accordion.Body>
+          </Accordion.Item>
 
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
-    </Form> */}
+        </Accordion>
+      </div>
     </div>
   );
 }
