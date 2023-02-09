@@ -6,8 +6,17 @@
 
 .navBarColor{
   background-color: #b144b4;
+  
 }
 
 .textColor{
+  color: #fff;
+}
+
+.links{
+  text-decoration: none;
+  color: #fff;
+}
+.links:hover{
   color: #fff;
 }

@@ -6,7 +6,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Cardapio from './routes/cardapio';
+import Cardapio from './routes/Cardapio';
 import Pedidos from './routes/Pedidos';
 import Carrinho from './routes/Carrinho';
 import Nos from './routes/Nos';
@@ -17,10 +17,6 @@ const router = createBrowserRouter([
     element: <App/>,
     errorElement: <h1>Erro 404. Está pág. não existe!</h1>,
     children:[
-      {
-        path: "/",
-        element: <h1>HOME</h1>
-      },
       {
         path: "/",
         element: <h1>HOME</h1>
