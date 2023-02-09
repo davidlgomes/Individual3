@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 700px;
 }
 
@@ -19,9 +19,10 @@
 
 .rosa{
     border: 1.5px #b144b4 solid;
+    width: 231px;
 }
 
 .fotos{
-    width: 231px;
+    width: 231.33px;
     height: 198px;
 }

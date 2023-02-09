@@ -1,4 +1,3 @@
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './Pratos.css'
 import Xbacon from "../../assets/Xbacon.jpg"
@@ -23,14 +22,19 @@ function Pratos() {
             </div>
             <br />
             <div>
+                <div className='cards'>
+                    <h1>A</h1>
+                    <h1>B</h1>
+                    <h1>C</h1>
+                </div>
                 <h5>Hambúrgueres</h5>
                 <div className='cards'>
-                    <Card style={{ width: '19rem'}} className='rosa'>
+                    <Card style={{ width: '19rem' }} className='rosa'>
                         <Card.Img variant="top" src={Xbacon} className='fotos' />
                         <Card.Body>
                             <Card.Title className='textoCentro'>X-Bacon</Card.Title>
                             <Card.Text className='textoCentro'>
-                                Pão, carne, queijo, presunto e bacon.
+                                Pão, carne, queijo e bacon.
                                 <br />
                                 <h5>Preço R$ 15,00</h5>
                             </Card.Text>
@@ -39,10 +43,10 @@ function Pratos() {
                             </div> */}
                         </Card.Body>
                     </Card>
-                    <Card style={{ width: '19rem'}} className='rosa'>
+                    <Card style={{ width: '19rem' }} className='rosa'>
                         <Card.Img variant="top" src={Xburguer} className='fotos' />
                         <Card.Body>
-                        <Card.Title className='textoCentro'>X-Burger</Card.Title>
+                            <Card.Title className='textoCentro'>X-Burger</Card.Title>
                             <Card.Text className='textoCentro'>
                                 Pão, carne, queijo e picles.
                                 <br />
@@ -53,10 +57,10 @@ function Pratos() {
                             </div> */}
                         </Card.Body>
                     </Card>
-                    <Card style={{ width: '19rem'}} className='rosa'>
+                    <Card style={{ width: '19rem' }} className='rosa'>
                         <Card.Img variant="top" src={Vegetariano} className='fotos' />
                         <Card.Body>
-                        <Card.Title className='textoCentro'>Vegetariano</Card.Title>
+                            <Card.Title className='textoCentro'>Vegetariano</Card.Title>
                             <Card.Text className='textoCentro'>
                                 Pão e planta.
                                 <br />
@@ -72,10 +76,10 @@ function Pratos() {
                 <h5>Bebidas</h5>
                 <div>
                     <div className='cards'>
-                        <Card style={{ width: '19rem'}} className='rosa'>
+                        <Card style={{ width: '19rem' }} className='rosa'>
                             <Card.Img variant="top" src={Coca} className='fotos' />
                             <Card.Body>
-                            <Card.Title className='textoCentro'>Coca</Card.Title>
+                                <Card.Title className='textoCentro'>Coca</Card.Title>
                                 <Card.Text className='textoCentro'>
                                     O mais querido de todos.
                                     <br />
@@ -84,7 +88,7 @@ function Pratos() {
                                 {/* <Button variant="primary">Go somewhere</Button> */}
                             </Card.Body>
                         </Card>
-                        <Card style={{ width: '19rem'}} className='rosa'>
+                        <Card style={{ width: '19rem' }} className='rosa'>
                             <Card.Img variant="top" src={Guarana} className='fotos' />
                             <Card.Body>
                                 <Card.Title className='textoCentro'>Guaraná</Card.Title>
@@ -96,8 +100,8 @@ function Pratos() {
                                 {/* <Button variant="primary">Go somewhere</Button> */}
                             </Card.Body>
                         </Card>
-                        <Card style={{ width: '19rem'}} className='rosa'>
-                            <Card.Img variant="top" src={Pepsi} className='fotos'/>
+                        <Card style={{ width: '19rem' }} className='rosa'>
+                            <Card.Img variant="top" src={Pepsi} className='fotos' />
                             <Card.Body>
                                 <Card.Title className='textoCentro'>Pepsi</Card.Title>
                                 <Card.Text className='textoCentro'>
@@ -112,7 +116,7 @@ function Pratos() {
                     <br />
                     <h5>Acompanhamentos</h5>
                     <div className='cards'>
-                        <Card style={{ width: '19rem'}} className='rosa'>
+                        <Card style={{ width: '19rem' }} className='rosa'>
                             <Card.Img variant="top" src={Batata} className='fotos' />
                             <Card.Body>
                                 <Card.Title className='textoCentro'>Batata Frita</Card.Title>
@@ -124,7 +128,7 @@ function Pratos() {
                                 {/* <Button variant="primary">Go somewhere</Button> */}
                             </Card.Body>
                         </Card>
-                        <Card style={{ width: '19rem'}} className='rosa'>
+                        <Card style={{ width: '19rem' }} className='rosa'>
                             <Card.Img variant="top" src={Tekitos} className='fotos' />
                             <Card.Body>
                                 <Card.Title className='textoCentro'>Tekitos</Card.Title>
@@ -136,12 +140,12 @@ function Pratos() {
                                 {/* <Button variant="primary">Go somewhere</Button> */}
                             </Card.Body>
                         </Card>
-                        <Card style={{ width: '19rem'}} className='rosa'>
-                            <Card.Img variant="top" src={Cebola} className='fotos'/>
+                        <Card style={{ width: '19rem' }} className='rosa'>
+                            <Card.Img variant="top" src={Cebola} className='fotos' />
                             <Card.Body>
                                 <Card.Title className='textoCentro'>Cebola Empanada</Card.Title>
                                 <Card.Text className='textoCentro'>
-                                    Bora pra chorar.
+                                    Bota pra chorar.
                                     <br />
                                     <h5>Preço R$ 15,00</h5>
                                 </Card.Text>
@@ -152,8 +156,8 @@ function Pratos() {
                     <br />
                     <h5>Sobremesas</h5>
                     <div className='cards'>
-                        <Card style={{ width: '19rem'}} className='rosa'>
-                            <Card.Img variant="top" src={Napolitano} className='fotos'/>
+                        <Card style={{ width: '19rem' }} className='rosa'>
+                            <Card.Img variant="top" src={Napolitano} className='fotos' />
                             <Card.Body>
                                 <Card.Title className='textoCentro'>Sorvete</Card.Title>
                                 <Card.Text className='textoCentro'>
@@ -164,8 +168,8 @@ function Pratos() {
                                 {/* <Button variant="primary">Go somewhere</Button> */}
                             </Card.Body>
                         </Card>
-                        <Card style={{ width: '19rem'}} className='rosa'>
-                            <Card.Img variant="top" src={Acaii} className='fotos'/>
+                        <Card style={{ width: '19rem' }} className='rosa'>
+                            <Card.Img variant="top" src={Acaii} className='fotos' />
                             <Card.Body>
                                 <Card.Title className='textoCentro'>Açaí</Card.Title>
                                 <Card.Text className='textoCentro'>
@@ -176,8 +180,8 @@ function Pratos() {
                                 {/* <Button variant="primary">Go somewhere</Button> */}
                             </Card.Body>
                         </Card>
-                        <Card style={{ width: '19rem'}} className='rosa'>
-                            <Card.Img variant="top" src={Salada} className='fotos'/>
+                        <Card style={{ width: '19rem' }} className='rosa'>
+                            <Card.Img variant="top" src={Salada} className='fotos' />
                             <Card.Body>
                                 <Card.Title className='textoCentro'>Salada de Frutas</Card.Title>
                                 <Card.Text className='textoCentro'>
