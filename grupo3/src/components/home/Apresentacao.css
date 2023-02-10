@@ -1,0 +1,29 @@
+.centroHome{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.fotosHome{
+  width: 206px;
+  height: 94px;
+}
+
+.textoHome{
+  text-align: center;
+  width: 600px;
+  height: 198px;
+}
+
+.textoCentroHome{
+  font-size: medium;
+  text-align: center;
+}
+
+.colunasHome{
+  width: 320px;
+  display: flex;
+  justify-content: center;
+}

@@ -9,7 +9,7 @@ function Header() {
   return (
       <Navbar className='navBarColor' variant="dark">
         <Container className='navBarColor'>
-          <Navbar.Brand href="/"  className='navBarColor'>Navbar</Navbar.Brand>
+          <Navbar.Brand href="/"  className='navBarColor'>SpaceBurguer</Navbar.Brand>
           <Nav>
             <Nav><Link to="/" className='links'>Home | </Link></Nav>
             <Nav><Link to="/cardapio" className='links'>| Cardápio |</Link></Nav>
