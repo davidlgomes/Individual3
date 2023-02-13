@@ -12,6 +12,11 @@ function Formulario() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+function enviarCard(){
+
+}
+
+
   return (
     <div>
       <div className='titulo'>
@@ -25,10 +30,10 @@ function Formulario() {
           <Form>
             <Form.Group>
               <Form.Select className='tabelaF'>
-                <option>Nenhum</option>
-                <option>X-Bacon</option>
-                <option>Vegetariano</option>
-                <option>X-Burguer</option>
+                <option id="nenhumburguer">Nenhum</option>
+                <option id="xbacon">X-Bacon</option>
+                <option id="vegetariano">Vegetariano</option>
+                <option id="xburguer">X-Burguer</option>
               </Form.Select><br />
             </Form.Group>
           </Form>
@@ -36,10 +41,10 @@ function Formulario() {
           <Form>
             <Form.Group>
               <Form.Select className='tabelaF'>
-                <option>Nenhuma</option>
-                <option>Coca</option>
-                <option>Guaraná</option>
-                <option>Sprite</option>
+                <option id="nenhumbebida">Nenhuma</option>
+                <option id="coca">Coca</option>
+                <option id="guaraná">Guaraná</option>
+                <option id="sprite">Sprite</option>
               </Form.Select><br />
             </Form.Group>
           </Form>
@@ -47,10 +52,10 @@ function Formulario() {
           <Form>
             <Form.Group>
               <Form.Select className='tabelaF'>
-                <option>Nenhum</option>
-                <option>Batata frita</option>
-                <option>Tekitos</option>
-                <option>Cebola empanada</option>
+                <option id="nenhumacompanhamento">Nenhum</option>
+                <option id="batata">Batata frita</option>
+                <option id="tekitos">Tekitos</option>
+                <option id="cebola">Cebola empanada</option>
               </Form.Select><br />
             </Form.Group>
           </Form>
@@ -58,10 +63,10 @@ function Formulario() {
           <Form>
             <Form.Group>
               <Form.Select className='tabelaF'>
-                <option>Nenhuma</option>
-                <option>Sorvete</option>
-                <option>Açaí</option>
-                <option>Salada de frutas</option>
+                <option id="nenhumsobremesa">Nenhuma</option>
+                <option id="sorvete">Sorvete</option>
+                <option id="acai">Açaí</option>
+                <option id="saladafruta">Salada de frutas</option>
               </Form.Select><br />
             </Form.Group>
             <Button variant="primary" onClick={handleShow}>
