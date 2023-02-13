@@ -1,6 +1,9 @@
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import AstroHome from '../../assets/AstroHome.png'
+import alien from '../../assets/alien.png'
+import alien2 from '../../assets/alien2.png'
+import OVNI from '../../assets/OVNI.gif'
 import './Apresentacao.css'
 import Xbacon from "../../assets/Xbacon.png"
 // import Batata from "../../assets/Batata.jpg"
@@ -33,7 +36,7 @@ function Apresentacao() {
       </div> */}
 
       <div>
-        <Carousel>
+        <Carousel fade>
           <Carousel.Item>
             <img
               className="d-block w-100"
@@ -41,21 +44,17 @@ function Apresentacao() {
               alt="First slide"
             />
             <Carousel.Caption>
-            <div className='centroHome'>
+              <div className='centroHome'>
                 <div className='textoHome'>
-                  <h2>SpaceBurguer</h2>
-                  <h5>
-                    Criado para inovar no mercado de hamburgueria, o SpaceBurguer iniciou
-                    sua operação com uma loja em janeiro de 2022.<br />
-                    Pensamos nos ingredientes que você mais gosta e montamos cada receita com
-                    o objetivo de <strong>agradar toda a galáxia.</strong><br />
-                    <strong>Somos a primeira hamburgueria temática de outro mundo localizada
-                      no Rio de Janeiro.<br />
+                  <h1>SpaceBurguer</h1>
+                  <h3>
+                    Experimente nossos burgueres que são de <strong>outro mundo!</strong><br />
+                    <strong><br />
                       <Button variant="primary" href='/cardapio'>Escolha o seu</Button>
                     </strong>
-                  </h5>
+                  </h3>
                 </div>
-                <img src={AstroHome} alt="astronauta" className='astroHome'/>
+                <img src={AstroHome} alt="astronauta" className='astroHome' />
               </div>
             </Carousel.Caption>
           </Carousel.Item>
@@ -66,19 +65,18 @@ function Apresentacao() {
               alt="First slide"
             />
             <Carousel.Caption>
-            <div className='centroHome'>
+              <div className='centroHome'>
+                <img src={alien2} alt="astronauta" className='astroHome' />
                 <div className='textoHome'>
-                  <h2>SpaceBurguer</h2>
-                  <h5>
-                    Criado para inovar no mercado de hamburgueria, o SpaceBurguer iniciou
-                    sua operação com uma loja em janeiro de 2022.<br />
-                    Pensamos nos ingredientes que você mais gosta e montamos cada receita com
-                    o objetivo de <strong>agradar toda a galáxia.</strong><br />
-                    <strong>Somos a primeira hamburgueria temática de outro mundo localizada
-                      no Rio de Janeiro.<br />
+                  <h1>SpaceBurguer</h1>
+                  <h3>
+                    Não se contente apenas com os sabores normais do planeta terra.
+                    Conheça nosso cardápio e <strong>faça uma viagem espacial.</strong><br />
+                    <strong>
+                      <br />
                       <Button variant="primary" href='/cardapio'>Escolha o seu</Button>
                     </strong>
-                  </h5>
+                  </h3>
                 </div>
               </div>
             </Carousel.Caption>
