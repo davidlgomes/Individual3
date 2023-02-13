@@ -18,7 +18,7 @@ function Pratos({ hamburguer, bebidas, acompanhamentos, sobremesa }) {
                 <div className='cards'>
                     {hamburguer.map((element) => (
 
-                        <Hamburguer id={element.id} nome={element.nome} igredientes={element.igredientes} preco={element.preco} key={element.id}  />
+                        <Hamburguer id={element.id} nome={element.nome} ingredientes={element.ingredientes} preco={element.preco} key={element.id}  />
 
                     )
                     )}

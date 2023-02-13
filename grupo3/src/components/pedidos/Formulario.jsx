@@ -9,6 +9,7 @@ import Comidas from '../../contexts/Contexts'
 
 function Formulario() {
 
+  
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -207,5 +208,11 @@ function Formulario() {
     </Comidas.Provider>
   );
 }
-
-export default Formulario;
+function info(){
+  const info ={
+    id:1,
+    nome:"daniella"
+  }
+  return info
+}
+export {Formulario, info};

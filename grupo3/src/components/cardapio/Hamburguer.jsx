@@ -15,7 +15,7 @@ function Hamburguer({nome,ingredientes,preco}){
                             <Card.Text className='textoCentro'>
                                 {ingredientes}
                                 <br />
-                                <h5>{preco}</h5>
+                                <h5>R$ {preco}</h5>
                             </Card.Text>
                             {/* <div className='textoCentro'>
                                 <Button variant="primary">R$ 15,00</Button>

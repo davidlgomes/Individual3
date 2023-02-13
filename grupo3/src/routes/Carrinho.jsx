@@ -1,7 +1,8 @@
 import Tabela from "../components/carrinho/Tabela";
+import {info} from "../components/pedidos/Formulario"
 
 function Carrinho() {
-  console.log('teste tela carrinho',)
+  console.log(typeof info)
   return (
     <div>
       <Tabela/>
