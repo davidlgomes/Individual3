@@ -1,14 +1,21 @@
+.topo{
+  background: #FFFFFF url("../assets/Topo.png") no-repeat left top ;
+    background-size: cover;
+    height: 510px;   
+}
+
 .centroHome{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .fotosHome{
-  width: 206px;
-  height: 94px;
+  width: 100%;
+  /* height: 94px; */
 }
 
 .textoHome{
@@ -23,7 +30,16 @@
 }
 
 .colunasHome{
-  width: 320px;
+  width: 350px;
   display: flex;
   justify-content: center;
+}
+
+.button{
+  color:#FFFFFF; 
+}
+
+.astroHome{
+  height: 550px;
+  width: 550px;
 }

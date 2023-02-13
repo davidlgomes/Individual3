@@ -1,10 +1,13 @@
 import Pratos from "../components/cardapio/Pratos"
-
+import Fundo from "../components/contato/Fundo"
+import styles from './Cardapio.module.css'
 function Cardapio(){
   return(
-    <div>
-      <Pratos/>
-    </div>
+    <div className={styles.fundo}>
+    <Pratos/>
+    <Fundo/>
+        </div>
+
   )
 }
-export default Cardapio
+export default Cardapio;

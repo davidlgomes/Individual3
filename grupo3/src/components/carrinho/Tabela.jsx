@@ -12,9 +12,9 @@ function Tabela() {
 
   return (
     <div className='centro'>
-      <div>
+      {/* <div>
         <h2>Carrinho</h2>
-      </div>
+      </div> */}
       <br />
       <div className='tabela'>
         <Table striped>
