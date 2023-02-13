@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import React, { useState } from 'react';
 import Accordion from 'react-bootstrap/Accordion';
+import Comidas from '../../contexts/Contexts'
 
 
 function Formulario() {
@@ -11,13 +12,85 @@ function Formulario() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const [selectH, setSelectH] = useState()
+  const [selectB, setSelectB] = useState()
+  const [selectA, setSelectA] = useState()
+  const [selectS, setSelectS] = useState()
+  const dados ={
+    hamburguer: selectH,
+    bebida: selectB,
+    sobremesa: selectS,
+    acompanhamento:selectA
 
-function enviarCard(){
+  }
+  const H = [
+    { id: 1, name: 'Nenhum' },
+    { id: 2, name: 'X-Bacon' },
+    { id: 3, name: 'Vegetariano' },
+    { id: 4, name: 'X-Burguer' },
+    
+  ];
 
-}
+  const B = [
+    { id: 1, name: 'Nenhum' },
+    { id: 2, name: 'Coca' },
+    { id: 3, name: 'Guaraná' },
+    { id: 4, name: 'Sprite' },
+    
+  ];
+
+  const A = [
+    { id: 1, name: 'Nenhum' },
+    { id: 2, name: 'Batata frita' },
+    { id: 3, name: 'Tekitos' },
+    { id: 4, name: 'Cebola' },
+    
+  ];
+  const S = [
+    { id: 1, name: 'Nenhum' },
+    { id: 2, name: 'Sorvete' },
+    { id: 3, name: 'Açaí' },
+    { id: 4, name: 'Salada de Frutas' },
+    
+  ];
+  
+
+
+  async function enviar() {
+    let dados={
+      id:null,
+      hamburguer: selectH,
+      bebida: selectB,
+      sobremesa: selectS,
+      acompanhamento:selectA
+
+    }
+    try {
+      const resp = await fetch(`https://projeto-individual-3-uy0v.onrender.com/pedido`, {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(dados),
+      });
+      console.log('resposta fetch->', resp)
+      if (resp.status == 200 || 201) {
+        setShow(true)
+      }
+
+    } catch (e) {
+      console.log(e)
+    }
+  }
+  function handleCreate(e) {
+    e.preventDefault()
+    alert(selectS)  
+  }
 
 
   return (
+    <Comidas.Provider value={{}}>
     <div>
       <div className='titulo'>
         <br />
@@ -29,47 +102,43 @@ function enviarCard(){
           <strong>Escolha o seu Hambúrguer:</strong>
           <Form>
             <Form.Group>
-              <Form.Select className='tabelaF'>
-                <option id="nenhumburguer">Nenhum</option>
-                <option id="xbacon">X-Bacon</option>
-                <option id="vegetariano">Vegetariano</option>
-                <option id="xburguer">X-Burguer</option>
+              <Form.Select className='tabelaF' value={selectH}  onChange={e => setSelectH(e.target.value)}>
+                {H.map((item) => (
+                  <option value={item.name}>{item.name}</option>
+                ))}
               </Form.Select><br />
             </Form.Group>
           </Form>
           <strong>E a bebida?</strong>
           <Form>
             <Form.Group>
-              <Form.Select className='tabelaF'>
-                <option id="nenhumbebida">Nenhuma</option>
-                <option id="coca">Coca</option>
-                <option id="guaraná">Guaraná</option>
-                <option id="sprite">Sprite</option>
+              <Form.Select className='tabelaF'value={selectB}  onChange={e => setSelectB(e.target.value)}>
+              {B.map((item) => (
+                  <option value={item.name}>{item.name}</option>
+                ))}
               </Form.Select><br />
             </Form.Group>
           </Form>
           <strong>Algum acompanhamento?</strong>
           <Form>
             <Form.Group>
-              <Form.Select className='tabelaF'>
-                <option id="nenhumacompanhamento">Nenhum</option>
-                <option id="batata">Batata frita</option>
-                <option id="tekitos">Tekitos</option>
-                <option id="cebola">Cebola empanada</option>
+              <Form.Select className='tabelaF' value={selectA}  onChange={e => setSelectA(e.target.value)}>
+              {A.map((item) => (
+                  <option value={item.name}>{item.name}</option>
+                ))}
               </Form.Select><br />
             </Form.Group>
           </Form>
           <strong>Não esquece a sobremesa!</strong>
           <Form>
             <Form.Group>
-              <Form.Select className='tabelaF'>
-                <option id="nenhumsobremesa">Nenhuma</option>
-                <option id="sorvete">Sorvete</option>
-                <option id="acai">Açaí</option>
-                <option id="saladafruta">Salada de frutas</option>
+              <Form.Select className='tabelaF' value={selectS}  onChange={e => setSelectS(e.target.value)}>
+              {S.map((item) => (
+                  <option value={item.name}>{item.name}</option>
+                ))}
               </Form.Select><br />
             </Form.Group>
-            <Button variant="primary" onClick={handleShow}>
+            <Button variant="primary" onClick={enviar}>
               Concluir pedido
             </Button>
 
@@ -135,6 +204,7 @@ function enviarCard(){
       </div>
       <br />
     </div>
+    </Comidas.Provider>
   );
 }
 

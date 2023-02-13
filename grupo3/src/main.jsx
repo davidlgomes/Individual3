@@ -11,8 +11,14 @@ import Pedidos from './routes/Pedidos';
 import Carrinho from './routes/Carrinho';
 import Nos from './routes/Nos';
 import Home from './routes/Home';
+import Comidas from './contexts/Contexts'
 
-const router = createBrowserRouter([
+
+
+
+const router = createBrowserRouter(
+  [
+  
   {
     path: "/",
     element: <App/>,
@@ -32,7 +38,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/carrinho",
-        element: <Carrinho/>
+        element: <Carrinho />
       },
       {
         path: "/nos",
