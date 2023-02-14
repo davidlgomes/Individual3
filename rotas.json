@@ -5,22 +5,22 @@
                 {
                     "id": 1,
                     "nome": "X-Bacon",
-                    "ingredientes": "Pão, hamburguer, molho, salada, queijo, presunto, bacon",
-                    "preco": 20,
+                    "ingredientes": "Pão, carne, queijo e bacon",
+                    "preco": 15,
                     "img": "url(/grupo3/src/assets/Xbacon.png)"
                 },
                 {
                     "id": 2,
                     "nome": "X-Burguer",
-                    "ingredientes": "Pão, hamburguer, molho, salada",
+                    "ingredientes": "Pão, carne, queijo e picles",
                     "preco": 12,
                     "img": "url(/grupo3/src/assets/Xburguer.png)"
                 },
                 {
                     "id": 3,
                     "nome": "Vegetariano",
-                    "ingredientes": "Planta",
-                    "preco": 10,
+                    "ingredientes": "Pão e uma incrível salada",
+                    "preco": 11,
                     "img": "url(/grupo3/src/assets/Vegetariano.png)"
                 }        
             ]
@@ -30,18 +30,21 @@
                 {
                     "id": 1,
                     "nome": "Coca",
+                    "ingredientes": "Refrigerante de cola",
                     "preco": 11,
                     "img": "url(/grupo3/src/assets/Coca.png)"
                 },
                 {
                     "id": 2,
                     "nome": "Guarana",
+                    "ingredientes": "Refrigerante de guaraná",
                     "preco": 10,
                     "img": "url(/grupo3/src/assets/Guarana.png)"
                 },
                 {
                     "id": 3,
                     "nome": "Pepsi",
+                    "ingredientes": "Refrigerante de cola",
                     "preco": 10,
                     "img": "url(/grupo3/src/assets/Pepsi.png)"
                 }        
@@ -52,21 +55,21 @@
                 {
                     "id": 1,
                     "nome": "Sorvete",
-                    "sabor": "Chocolate",
+                    "sabor": "3 bolas (sabores)",
                     "preco": 9,
                     "img": "url(/grupo3/src/assets/Napolitano.png)"
                 },
                 {
                     "id": 2,
                     "nome": "Açai",
-                    "sabor": "natural",
+                    "sabor": "Natural ou morango",
                     "preco": 10,
                     "img": "url(/grupo3/src/assets/Acaii.png)"
                 },
                 {
                     "id": 3,
                     "nome": "salada de frutas",
-                    "sabor": "frutas vermelhas",
+                    "sabor": "Frutas da estação",
                     "preco": 7,
                     "img": "url(/grupo3/src/assets/Salada.png)"
                 }        
@@ -77,18 +80,21 @@
                 {
                     "id": 1,
                     "nome": "batata frita",
+                    "ingredientes": "Batata frita palito",
                     "preco": 9,
                     "img": "url(/grupo3/src/assets/Batata.png)"
                 },
                 {
                     "id": 2,
                     "nome": "anel de cebola",
+                    "ingredientes": "Porção com 10 unidades",
                     "preco": 10,
                     "img": "url(/grupo3/src/assets/Cebola.png)"
                 },
                 {
                     "id": 3,
                     "nome": "tekitos",
+                    "ingredientes": "Porção com 10 unidades",
                     "preco": 7,
                     "img": "url(/grupo3/src/assets/Tekitos.png)"
                 }        
