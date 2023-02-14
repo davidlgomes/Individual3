@@ -9,8 +9,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .fotosHome{
@@ -21,7 +19,7 @@
 .textoHome{
   text-align: center;
   width: 600px;
-  height: 198px;
+  height: 210px;
 }
 
 .textoCentroHome{
@@ -40,6 +38,14 @@
 }
 
 .astroHome{
-  height: 550px;
-  width: 550px;
+  height: 450px;
+  width: 600px;
+}
+
+.h1Home{
+  text-align: center;
+}
+
+.infoHome{
+  margin-top: -11px;
 }

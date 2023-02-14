@@ -1,7 +1,6 @@
 import Tabela from "../components/carrinho/Tabela";
 import { useParams } from 'react-router-dom';
 
-
 function Carrinho() {
   const {id} = useParams();
   return (

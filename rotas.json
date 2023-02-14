@@ -4,21 +4,24 @@
             "hamburguer": [
                 {
                     "id": 1,
-                    "nome": "x-bacon",
+                    "nome": "X-Bacon",
                     "ingredientes": "Pão, hamburguer, molho, salada, queijo, presunto, bacon",
-                    "preco": 20
+                    "preco": 20,
+                    "img": "url(/grupo3/src/assets/Xbacon.png)"
                 },
                 {
                     "id": 2,
-                    "nome": "x-hamburguer",
+                    "nome": "X-Burguer",
                     "ingredientes": "Pão, hamburguer, molho, salada",
-                    "preco": 12
+                    "preco": 12,
+                    "img": "url(/grupo3/src/assets/Xburguer.png)"
                 },
                 {
                     "id": 3,
-                    "nome": "vegetariano",
+                    "nome": "Vegetariano",
                     "ingredientes": "Planta",
-                    "preco": 10
+                    "preco": 10,
+                    "img": "url(/grupo3/src/assets/Vegetariano.png)"
                 }        
             ]
         },
@@ -26,18 +29,21 @@
             "bebidas": [
                 {
                     "id": 1,
-                    "nome": "coca",
-                    "preco": 11
+                    "nome": "Coca",
+                    "preco": 11,
+                    "img": "url(/grupo3/src/assets/Coca.png)"
                 },
                 {
                     "id": 2,
-                    "nome": "guarana",
-                    "preco": 10
+                    "nome": "Guarana",
+                    "preco": 10,
+                    "img": "url(/grupo3/src/assets/Guarana.png)"
                 },
                 {
                     "id": 3,
-                    "nome": "pepsi",
-                    "preco": 10
+                    "nome": "Pepsi",
+                    "preco": 10,
+                    "img": "url(/grupo3/src/assets/Pepsi.png)"
                 }        
             ]
         },
@@ -45,21 +51,24 @@
             "sobremesas": [
                 {
                     "id": 1,
-                    "nome": "sorvete",
-                    "sabor": "chocolate",
-                    "preco": 9
+                    "nome": "Sorvete",
+                    "sabor": "Chocolate",
+                    "preco": 9,
+                    "img": "url(/grupo3/src/assets/Napolitano.png)"
                 },
                 {
                     "id": 2,
-                    "nome": "açai",
+                    "nome": "Açai",
                     "sabor": "natural",
-                    "preco": 10
+                    "preco": 10,
+                    "img": "url(/grupo3/src/assets/Acaii.png)"
                 },
                 {
                     "id": 3,
                     "nome": "salada de frutas",
                     "sabor": "frutas vermelhas",
-                    "preco": 7
+                    "preco": 7,
+                    "img": "url(/grupo3/src/assets/Salada.png)"
                 }        
             ]
         },
@@ -68,17 +77,20 @@
                 {
                     "id": 1,
                     "nome": "batata frita",
-                    "preco": 9
+                    "preco": 9,
+                    "img": "url(/grupo3/src/assets/Batata.png)"
                 },
                 {
                     "id": 2,
                     "nome": "anel de cebola",
-                    "preco": 10
+                    "preco": 10,
+                    "img": "url(/grupo3/src/assets/Cebola.png)"
                 },
                 {
                     "id": 3,
                     "nome": "tekitos",
-                    "preco": 7
+                    "preco": 7,
+                    "img": "url(/grupo3/src/assets/Tekitos.png)"
                 }        
             ]
         }
