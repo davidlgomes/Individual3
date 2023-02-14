@@ -7,7 +7,7 @@
                     "nome": "X-Bacon",
                     "ingredientes": "Pão, carne, queijo e bacon",
                     "preco": 15,
-                    "img": "url(/grupo3/src/assets/Xbacon.png)"
+                    "img": "https://assets.unileversolutions.com/recipes-v2/230446.jpg"
                 },
                 {
                     "id": 2,
