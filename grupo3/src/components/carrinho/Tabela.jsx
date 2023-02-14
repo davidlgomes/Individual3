@@ -5,12 +5,18 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 
-function Tabela() {
+
+
+function Tabela({id}) {
+ 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+
+
   return (
+    
     <div className='centro'>
       {/* <div>
         <h2>Carrinho</h2>
@@ -68,7 +74,7 @@ function Tabela() {
                   Finalizar pedido
                 </Button>
 
-                <Modal show={show} onHide={handleClose}>
+                <Modal show={show} onHide={ console.log(id)}>
                   <Modal.Header closeButton>
                     <Modal.Title>Obrigado pela compra!</Modal.Title>
                   </Modal.Header>

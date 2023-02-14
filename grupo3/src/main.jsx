@@ -37,7 +37,7 @@ const router = createBrowserRouter(
         element: <Pedidos/>
       },
       {
-        path: "/carrinho",
+        path: "/carrinho/:id?",
         element: <Carrinho />
       },
       {

@@ -1,13 +1,13 @@
 import Tabela from "../components/carrinho/Tabela";
-import {info} from "../components/pedidos/Formulario"
+import { useParams } from 'react-router-dom';
+
 
 function Carrinho() {
-  console.log(typeof info)
+  const {id} = useParams();
   return (
     <div>
-      <Tabela/>
+      <Tabela id ={id}/>
     </div>
   );
 }
-
 export default Carrinho;

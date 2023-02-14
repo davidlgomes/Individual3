@@ -5,9 +5,11 @@ import Modal from 'react-bootstrap/Modal';
 import React, { useState } from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import Comidas from '../../contexts/Contexts'
+import  {Link} from 'react-router-dom';
 
 
 function Formulario() {
+
 
   
   const [show, setShow] = useState(false);
@@ -17,6 +19,7 @@ function Formulario() {
   const [selectB, setSelectB] = useState()
   const [selectA, setSelectA] = useState()
   const [selectS, setSelectS] = useState()
+  const [id, setId] = useState(0)
   const dados ={
     hamburguer: selectH,
     bebida: selectB,
@@ -24,6 +27,7 @@ function Formulario() {
     acompanhamento:selectA
 
   }
+  //let id = 23;
   const H = [
     { id: 1, name: 'Nenhum' },
     { id: 2, name: 'X-Bacon' },
@@ -54,6 +58,23 @@ function Formulario() {
     { id: 4, name: 'Salada de Frutas' },
     
   ];
+
+  async function loadId() {
+    try {
+      const resp = await fetch(`https://projeto-individual-3-uy0v.onrender.com/pedido`, {
+        method: 'GET',
+      });
+      console.log('resposta fetch ID->', resp)
+      if (resp.status == 200 || 201) {
+        const id = await resp.json();
+        //setId(id)
+        console.log('ids do fetc->', id.length);
+      }
+
+    } catch (e) {
+      console.log(e)
+    }
+  }
   
 
 
@@ -139,10 +160,11 @@ function Formulario() {
                 ))}
               </Form.Select><br />
             </Form.Group>
-            <Button variant="primary" onClick={enviar}>
+            <Button variant="primary" onClick={loadId}>
+              
+              
               Concluir pedido
             </Button>
-
             <Modal
               show={show}
               onHide={handleClose}
@@ -160,7 +182,7 @@ function Formulario() {
                 <Button variant="secondary" onClick={handleClose}>
                   Fechar
                 </Button>
-                <a href="/carrinho"><Button variant="primary">Carrinho</Button></a>
+                <Link to={`/carrinho/${id}`}><Button variant="primary">Carrinho</Button></Link>
               </Modal.Footer>
             </Modal>
           </Form>
@@ -208,11 +230,5 @@ function Formulario() {
     </Comidas.Provider>
   );
 }
-function info(){
-  const info ={
-    id:1,
-    nome:"daniella"
-  }
-  return info
-}
-export {Formulario, info};
+
+export default Formulario;
