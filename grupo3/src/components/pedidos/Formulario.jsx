@@ -2,13 +2,18 @@ import Form from 'react-bootstrap/Form';
 import './Formulario.css'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import Comidas from '../../contexts/Contexts'
 import  {Link} from 'react-router-dom';
 
 
 function Formulario() {
+
+  useEffect(()=>{
+    loadId();
+
+  },[])
 
 
   
@@ -27,7 +32,7 @@ function Formulario() {
     acompanhamento:selectA
 
   }
-  //let id = 23;
+
   const H = [
     { id: 1, name: 'Nenhum' },
     { id: 2, name: 'X-Bacon' },
@@ -56,8 +61,12 @@ function Formulario() {
     { id: 2, name: 'Sorvete' },
     { id: 3, name: 'Açaí' },
     { id: 4, name: 'Salada de Frutas' },
+    { id: 5, name: 'teste 5' },
+    { id: 66, name: 'teste 6' },
+    { id: 79, name: 'teste 7' },
     
   ];
+ 
 
   async function loadId() {
     try {
@@ -66,9 +75,11 @@ function Formulario() {
       });
       console.log('resposta fetch ID->', resp)
       if (resp.status == 200 || 201) {
-        const id = await resp.json();
-        //setId(id)
-        console.log('ids do fetc->', id.length);
+        const getIds = await resp.json();
+       
+        const id1 = getIds[getIds.length-1].id;
+        console.log('id anterior',id1)
+        setId(id1+1);
       }
 
     } catch (e) {
@@ -80,13 +91,14 @@ function Formulario() {
 
   async function enviar() {
     let dados={
-      id:null,
+      id:id,
       hamburguer: selectH,
       bebida: selectB,
       sobremesa: selectS,
       acompanhamento:selectA
 
     }
+    console.log('dados id novo',dados)
     try {
       const resp = await fetch(`https://projeto-individual-3-uy0v.onrender.com/pedido`, {
         method: 'POST',
@@ -96,9 +108,11 @@ function Formulario() {
         },
         body: JSON.stringify(dados),
       });
-      console.log('resposta fetch->', resp)
+      console.log('resposta fetch pedido->', resp)
       if (resp.status == 200 || 201) {
+        console.log('dados enviados')
         setShow(true)
+       
       }
 
     } catch (e) {
@@ -160,7 +174,7 @@ function Formulario() {
                 ))}
               </Form.Select><br />
             </Form.Group>
-            <Button variant="primary" onClick={loadId}>
+            <Button variant="primary" onClick={()=>enviar()}>
               
               
               Concluir pedido
