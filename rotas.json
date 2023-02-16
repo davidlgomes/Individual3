@@ -103,11 +103,29 @@
     ],
     "pedido": [
         {
-            "id": 1,
-            "hamburguer": "x-bacon",
-            "bebida": "coda",
-            "sobremesa": "sorvete"
+           "id":1,
+           "itens":[
+            {
+                "hamburguer": "x-bacon",
+                "preco":12.50
+            },
+            {
+                "bebida": "coda",
+                "preco":7.50
+            },
+            {
+                "sobremesa": "sorvete",
+                "preco":3.50
+
+            },
+            {
+                "acompanhamento": "teste",
+                "preco":3.50
+
+            }
+        ]  
         }
+       
     ],
     "comanda": [
         {
