@@ -1,12 +1,5 @@
-/* .left{
-  margin-left: 10px;
-}
-
-.right{
-  margin-right: 10px;
-} */
-
 .colorBack{
+  font-family: 'Ubuntu', sans-serif;
   background-color: #b144b4;
   display: flex;
   justify-content: space-evenly;
@@ -20,4 +13,18 @@
 
 li {
   list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+  
+}
+
+.textColor:hover{
+  color:black;
+}
+
+a:hover{
+  color: black;
 }

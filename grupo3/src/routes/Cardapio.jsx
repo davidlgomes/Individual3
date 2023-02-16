@@ -42,7 +42,7 @@ function Cardapio() {
         <Pratos hamburguer={hamburguer} bebidas={bebidas} acompanhamentos={acompanhamentos} sobremesa={sobremesa}/>
        
       </>
-        <Fundo />
+        {/* <Fundo /> */}
       </div>
     )
  

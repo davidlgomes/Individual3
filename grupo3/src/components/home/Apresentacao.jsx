@@ -1,19 +1,12 @@
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import AstroHome from '../../assets/AstroHome.png'
-import alien from '../../assets/alien.png'
-import alien2 from '../../assets/alien2.png'
-import alien3 from '../../assets/alien3.png'
-import OVNI from '../../assets/OVNI.gif'
+import Alien3 from '../../assets/Alien3.png'
 import './Apresentacao.css'
 import Xbacon from "../../assets/Xbacon.png"
-// import Batata from "../../assets/Batata.jpg"
-// import Acaii from "../../assets/Acaii.jpg"
 import Xburguer from "../../assets/Xburguer.png"
 import Vegetariano from "../../assets/Vegetariano.png"
-import Topo2 from "../../assets/Topo2.png"
 import Topo3 from "../../assets/Topo3.png"
-import Topo4 from "../../assets/Topo4.png"
 import Carousel from 'react-bootstrap/Carousel';
 
 function Apresentacao() {
@@ -30,12 +23,10 @@ function Apresentacao() {
             <Carousel.Caption>
               <div className='centroHome'>
                 <div className='textoHome'>
-                  <br />
-                  <h1>SpaceBurguer</h1>
-                  <h3>
-                    Experimente nossos burgueres que são de <strong>outro mundo!</strong><br />
+                  <h3 className='text-home'>
+                  Experimente nossos burgueres que são de <strong><br/>outro mundo!</strong><br />
                     <strong><br />
-                      <Button variant="primary" href='/cardapio'>Escolha o seu</Button>
+                      <Button className='button' variant="info" href='/cardapio'><strong>ESCOLHA O SEU</strong></Button>
                     </strong>
                   </h3>
                 </div>
@@ -51,25 +42,24 @@ function Apresentacao() {
             />
             <Carousel.Caption>
               <div className='centroHome'>
-                <img src={alien3} alt="astronauta" className='astroHome' />
                 <div className='textoHome'>
-                  <h1>SpaceBurguer</h1>
-                  <h3>
-                    Esqueça os sabores do planeta terra.
-                    Conheça nosso cardápio e <strong>faça uma viagem espacial.</strong><br />
+                  <h3 className='text-home'>
+                  Esqueça os sabores <br/>do planeta terra.<br/>
+                  Conheça nosso cardápio <br/>e faça <strong>uma viagem espacial.</strong><br />
                     <strong>
                       <br />
-                      <Button variant="primary" href='/cardapio'>Escolha o seu</Button>
+                      <Button className='button' variant="info" href='/cardapio'><strong>VIAJAR AGORA</strong></Button>
                     </strong>
                   </h3>
                 </div>
-              </div>
+                <img src={Alien3} alt="astronauta" className='astroHome2' />
+              </div> 
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
       </div>
       <div className='infoHome'>
-        <h1 className='h1Home'>Conheça nossos produtos:</h1>
+        <h2 className='h1Home'>Conheça nossos produtos:</h2>
         <div className='centroHome'>
           <div className='colunasHome'>
             <Card style={{ width: '15rem', height: '20.5rem' }} className='rosa'>

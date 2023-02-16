@@ -7,19 +7,19 @@ function Footer() {
         <div>
           <strong>Conheça nossas lojas:</strong><br />
           Irajá | Madureira | Barra <br />
-          Botafogo | São Conrrado
+          Botafogo | São Conrado
         </div>
 
         <div>
           <strong>Fale Conosco:</strong><br />
-          <i class="fa fa-whatsapp"> (21) 97171-7171 / 97272-7272</i><br />
-          <i class="fa fa-envelope"> contato@spaceburguer.com.br</i>
+          <i class="fa fa-whatsapp"> </i> (21) 97171-7171 / 97272-7272<br />
+          <i class="fa fa-envelope"> </i> contato@spaceburguer.com.br
         </div>
 
         <div>
           <strong>Fale Conosco:</strong><br />
-          <i class="fa fa-twitter"> Space.Burger</i><br />
-          <i class="fa fa-instagram textColor"> Space.Burguer</i>
+          <a href="https://twitter.com/login?lang=pt"><i class="fa fa-twitter textColor"> </i> Space.Burger</a><br />
+          <a href="https://www.instagram.com/"><i class="fa fa-instagram textColor"> </i> Space.Burguer</a>
         </div>
       </footer>
     </div>
