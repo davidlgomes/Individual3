@@ -12,8 +12,11 @@ function Formulario() {
 
   useEffect(()=>{
     loadId();
+    loadCardapio();
 
   },[])
+
+
 
 
   
@@ -24,7 +27,16 @@ function Formulario() {
   const [selectB, setSelectB] = useState()
   const [selectA, setSelectA] = useState()
   const [selectS, setSelectS] = useState()
+  const [precotH, setprecoH] = useState()
+  const [precoB, setprecoB] = useState()
+  const [precoA, setprecoA] = useState()
+  const [precoS, setprecoS] = useState()
   const [id, setId] = useState(0)
+  const [dados1, setdados1] = useState([])
+  const [bebidas, setbebidas] = useState([])
+  const [acompanhamentos, setacompanhamentos] = useState([])
+  const [sobremesa, setsobremesa] = useState([])
+  const [hamburguer, sethamburguer] = useState([])
   const dados ={
     hamburguer: selectH,
     bebida: selectB,
@@ -33,40 +45,34 @@ function Formulario() {
 
   }
 
-  const H = [
-    { id: 1, name: 'Nenhum' },
-    { id: 2, name: 'X-Bacon' },
-    { id: 3, name: 'Vegetariano' },
-    { id: 4, name: 'X-Burguer' },
-    
-  ];
-
-  const B = [
-    { id: 1, name: 'Nenhum' },
-    { id: 2, name: 'Coca' },
-    { id: 3, name: 'Guaraná' },
-    { id: 4, name: 'Sprite' },
-    
-  ];
-
-  const A = [
-    { id: 1, name: 'Nenhum' },
-    { id: 2, name: 'Batata frita' },
-    { id: 3, name: 'Tekitos' },
-    { id: 4, name: 'Cebola' },
-    
-  ];
-  const S = [
-    { id: 1, name: 'Nenhum' },
-    { id: 2, name: 'Sorvete' },
-    { id: 3, name: 'Açaí' },
-    { id: 4, name: 'Salada de Frutas' },
-    { id: 5, name: 'teste 5' },
-    { id: 66, name: 'teste 6' },
-    { id: 79, name: 'teste 7' },
-    
-  ];
+  const H = hamburguer
+  const B = bebidas
+  const A = acompanhamentos
+  const S = sobremesa
  
+
+  async function loadCardapio() {
+    try {
+      const resp = await fetch(`https://projeto-individual-3-uy0v.onrender.com/cardapio`, {
+        method: 'GET',
+      });
+      console.log('resposta fetch->', resp)
+      if (resp.status == 200 || 201) {
+        const Dados = await resp.json();
+
+        console.log('Dados do fetc->', Dados);
+        setdados1(Dados)
+        sethamburguer(Dados[0].hamburguer)
+        setbebidas(Dados[1].bebidas)
+        setsobremesa(Dados[2].sobremesas)
+        setacompanhamentos(Dados[3].acompanhamentos)
+
+      }
+
+    } catch (e) {
+      console.log(e)
+    }
+  }
 
   async function loadId() {
     try {
@@ -140,7 +146,7 @@ function Formulario() {
             <Form.Group>
               <Form.Select className='tabelaF' value={selectH}  onChange={e => setSelectH(e.target.value)}>
                 {H.map((item) => (
-                  <option value={item.name}>{item.name}</option>
+                  <option value={item.nome}>{item.nome} - {"R$ "+item.preco}</option>
                 ))}
               </Form.Select><br />
             </Form.Group>
@@ -150,7 +156,7 @@ function Formulario() {
             <Form.Group>
               <Form.Select className='tabelaF'value={selectB}  onChange={e => setSelectB(e.target.value)}>
               {B.map((item) => (
-                  <option value={item.name}>{item.name}</option>
+                  <option value={item.nome}>{item.nome} - {"R$ "+item.preco}</option>
                 ))}
               </Form.Select><br />
             </Form.Group>
@@ -160,7 +166,7 @@ function Formulario() {
             <Form.Group>
               <Form.Select className='tabelaF' value={selectA}  onChange={e => setSelectA(e.target.value)}>
               {A.map((item) => (
-                  <option value={item.name}>{item.name}</option>
+                  <option value={item.nome}>{item.nome} - {"R$ "+item.preco}</option>
                 ))}
               </Form.Select><br />
             </Form.Group>
@@ -170,7 +176,7 @@ function Formulario() {
             <Form.Group>
               <Form.Select className='tabelaF' value={selectS}  onChange={e => setSelectS(e.target.value)}>
               {S.map((item) => (
-                  <option value={item.name}>{item.name}</option>
+                  <option value={item.nome}>{item.nome} - {"R$ "+item.preco}</option>
                 ))}
               </Form.Select><br />
             </Form.Group>
