@@ -133,16 +133,16 @@ function Formulario() {
 
   return (
     <Comidas.Provider value={{}}>
-    <div>
+    <div className='fundo-pedido'>
       <div className='titulo'>
         <br />
-        <h1>Monte o seu combo</h1>
+        <h2>Monte o seu combo</h2>
       </div>
       <div className='colunas'>
         <div className='tabelaF'>
           <br />
-          <strong>Escolha o seu Hambúrguer:</strong>
-          <Form>
+          <strong className='titulos'>Escolha o seu Hambúrguer:</strong>
+          <Form className='tabelas'>
             <Form.Group>
               <Form.Select className='tabelaF' value={selectH}  onChange={e => setSelectH(e.target.value)}>
                 {H.map((item) => (
@@ -151,7 +151,7 @@ function Formulario() {
               </Form.Select><br />
             </Form.Group>
           </Form>
-          <strong>E a bebida?</strong>
+          <strong className='titulos'>E a bebida?</strong>
           <Form>
             <Form.Group>
               <Form.Select className='tabelaF'value={selectB}  onChange={e => setSelectB(e.target.value)}>
@@ -161,7 +161,7 @@ function Formulario() {
               </Form.Select><br />
             </Form.Group>
           </Form>
-          <strong>Algum acompanhamento?</strong>
+          <strong className='titulos'>Algum acompanhamento?</strong>
           <Form>
             <Form.Group>
               <Form.Select className='tabelaF' value={selectA}  onChange={e => setSelectA(e.target.value)}>
@@ -171,7 +171,7 @@ function Formulario() {
               </Form.Select><br />
             </Form.Group>
           </Form>
-          <strong>Não esquece a sobremesa!</strong>
+          <strong className='titulos'>Não esquece a sobremesa!</strong>
           <Form>
             <Form.Group>
               <Form.Select className='tabelaF' value={selectS}  onChange={e => setSelectS(e.target.value)}>
@@ -180,10 +180,10 @@ function Formulario() {
                 ))}
               </Form.Select><br />
             </Form.Group>
-            <Button variant="primary" onClick={()=>enviar()}>
+            <Button variant="info" className='buton' onClick={()=>enviar()}>
               
               
-              Concluir pedido
+              <strong>CONCLUIR PEDIDO</strong>
             </Button>
             <Modal
               show={show}
@@ -202,13 +202,13 @@ function Formulario() {
                 <Button variant="secondary" onClick={handleClose}>
                   Fechar
                 </Button>
-                <Link to={`/carrinho/${id}`}><Button variant="primary">Carrinho</Button></Link>
+                <Link to={`/carrinho/${id}`}><Button variant="info">Carrinho</Button></Link>
               </Modal.Footer>
             </Modal>
           </Form>
         </div>
         <div className='tabelaF'>
-          <h4>Lembre os Ingredientes:</h4>
+          <h4 className='titulos'>Lembre os ingredientes:</h4>
           <br />
           <Accordion>
             <Accordion.Item eventKey="0">

@@ -92,8 +92,8 @@ function Tabela({id}) {
               <td colSpan={2}><strong>Valor total</strong></td>
               <td><strong>39,00</strong></td>
               <td>
-                <Button variant="primary" onClick={handleShow}>
-                  Finalizar pedido
+                <Button variant="info" className='botao-clique' onClick={handleShow}>
+                  <strong>FINALIZAR PEDIDO</strong>
                 </Button>
 
                 <Modal show={show} onHide={ console.log(id)}>
@@ -132,8 +132,8 @@ function Tabela({id}) {
                     </Form>
                   </Modal.Body>
                   <Modal.Footer>
-                    <Button variant="primary" onClick={handleClose}>
-                      Enviar dados
+                    <Button variant="info" className='botao-clique'onClick={handleClose}>
+                      <strong>ENVIAR DADOS</strong>
                     </Button>
                   </Modal.Footer>
                 </Modal>
